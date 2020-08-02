@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_example/modules/listview_item.dart';
+import 'package:flutter_basic_example/modules/listview_item_bean.dart';
 class ListViewPage extends StatefulWidget {
   @override
   _ListViewPageState createState() => _ListViewPageState();
