@@ -12,21 +12,18 @@ class _ExpansionTitlePageState extends State<ExpansionTitlePage> {
         title: new Text("ExpansionTile"),
 
       ),
-      body: Center(
-        child: ExpansionTile(
-          title: Text("基本信息"),
-          leading: Icon(Icons.all_inclusive),
-          backgroundColor: Colors.black12,
-          children: <Widget>[
-            ListTile(
-              title: Text("list title"),
-              subtitle: Text("subtitle"),
+      body: ExpansionTile(
+        title: Text("基本信息",style: TextStyle(color: Colors.black),),
+        leading: Icon(Icons.all_inclusive,color: Colors.black,),
+        backgroundColor: Colors.black12,
+        children: <Widget>[
+          ListTile(
+            title: Text("list title"),
+            subtitle: Text("subtitle"),
 
-
-            )
-          ],
-          initiallyExpanded: true,
-        ),
+          )
+        ],
+        initiallyExpanded: true,
       ),
     );
   }

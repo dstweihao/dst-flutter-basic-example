@@ -13,10 +13,10 @@ class HomePage extends StatelessWidget {
           child: new Column(
             children: <Widget>[
               RaisedButton(
-                color: Colors.brown,
+                color: Colors.yellow,
                 child: Text(
                   "动态赋值列表",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.black),
                 ),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -25,10 +25,10 @@ class HomePage extends StatelessWidget {
                 },
               ),
               RaisedButton(
-                color: Colors.brown,
+                color: Colors.yellow,
                 child: Text(
                   "展开闭合案例",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.black),
                 ),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -37,10 +37,10 @@ class HomePage extends StatelessWidget {
                 },
               ),
               RaisedButton(
-                color: Colors.brown,
+                color: Colors.yellow,
                 child: Text(
                   "闭合展开列表",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.black),
                 ),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
