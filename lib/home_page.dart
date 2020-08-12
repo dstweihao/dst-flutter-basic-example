@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
               RaisedButton(
                 color: customColor ? Color(0xFF30a261) : Colors.blue,
                 child: Text(
-                  "自定义颜色",
+                  "自定义颜色的使用",
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () {
