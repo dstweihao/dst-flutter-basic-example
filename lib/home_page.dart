@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_basic_example/example/expansion_panel_list_page.dart';
 import 'package:flutter_basic_example/example/expansiontitle_page.dart';
 import 'package:flutter_basic_example/example/listview_page.dart';
+import 'package:flutter_basic_example/example/text_form_field_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -13,10 +14,10 @@ class HomePage extends StatelessWidget {
           child: new Column(
             children: <Widget>[
               RaisedButton(
-                color: Colors.yellow,
+                color: Colors.blue,
                 child: Text(
                   "动态赋值列表",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -25,10 +26,10 @@ class HomePage extends StatelessWidget {
                 },
               ),
               RaisedButton(
-                color: Colors.yellow,
+                color: Colors.blue,
                 child: Text(
                   "展开闭合案例",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -37,14 +38,26 @@ class HomePage extends StatelessWidget {
                 },
               ),
               RaisedButton(
-                color: Colors.yellow,
+                color: Colors.blue,
                 child: Text(
                   "闭合展开列表",
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return ExpansionPanelListPage();
+                  }));
+                },
+              ),
+              RaisedButton(
+                color: Colors.blue,
+                child: Text(
+                  "输入框选择器",
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return TextFormFieldPage();
                   }));
                 },
               )
