@@ -4,14 +4,22 @@ import 'package:flutter_basic_example/example/expansiontitle_page.dart';
 import 'package:flutter_basic_example/example/listview_page.dart';
 import 'package:flutter_basic_example/example/text_form_field_page.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  bool customColor = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Text("首页")),
         body: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: new Column(
+          padding: EdgeInsets.all(10.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               RaisedButton(
                 color: Colors.blue,
@@ -59,6 +67,18 @@ class HomePage extends StatelessWidget {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return TextFormFieldPage();
                   }));
+                },
+              ),
+              RaisedButton(
+                color: customColor ? Color(0xFF30a261) : Colors.blue,
+                child: Text(
+                  "自定义颜色",
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  setState(() {
+                    customColor = !customColor;
+                  });
                 },
               )
             ],
