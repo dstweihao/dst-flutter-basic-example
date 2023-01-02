@@ -21,8 +21,8 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              RaisedButton(
-                color: Colors.blue,
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(foregroundColor: Colors.blue),
                 child: Text(
                   "动态赋值列表",
                   style: TextStyle(color: Colors.white),
@@ -33,8 +33,8 @@ class _HomePageState extends State<HomePage> {
                   }));
                 },
               ),
-              RaisedButton(
-                color: Colors.blue,
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(foregroundColor: Colors.blue),
                 child: Text(
                   "展开闭合案例",
                   style: TextStyle(color: Colors.white),
@@ -45,8 +45,8 @@ class _HomePageState extends State<HomePage> {
                   }));
                 },
               ),
-              RaisedButton(
-                color: Colors.blue,
+              ElevatedButton(
+
                 child: Text(
                   "闭合展开列表",
                   style: TextStyle(color: Colors.white),
@@ -57,8 +57,8 @@ class _HomePageState extends State<HomePage> {
                   }));
                 },
               ),
-              RaisedButton(
-                color: Colors.blue,
+              ElevatedButton(
+
                 child: Text(
                   "输入框选择器",
                   style: TextStyle(color: Colors.white),
@@ -69,8 +69,8 @@ class _HomePageState extends State<HomePage> {
                   }));
                 },
               ),
-              RaisedButton(
-                color: customColor ? Color(0xFF30a261) : Colors.blue,
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(foregroundColor: customColor?Color(0xFF30a261):Colors.blue),
                 child: Text(
                   "自定义颜色的使用",
                   style: TextStyle(color: Colors.white),
