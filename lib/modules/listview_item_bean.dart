@@ -4,7 +4,7 @@ class ListViewItem  {
   final int age;
   final String country;
 
-  ListViewItem({this.name, this.age, this.country}):super();
+  ListViewItem({required this.name,required this.age,required this.country}):super();
 
 }
 

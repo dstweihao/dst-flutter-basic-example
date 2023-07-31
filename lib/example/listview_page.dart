@@ -1,5 +1,8 @@
+
+
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_example/modules/listview_item_bean.dart';
+
+import '../modules/listview_item_bean.dart';
 
 class ListViewPage extends StatefulWidget {
   @override
@@ -7,7 +10,7 @@ class ListViewPage extends StatefulWidget {
 }
 
 class _ListViewPageState extends State<ListViewPage> {
-  var myList = List<ListViewItem>();
+  var myList = List<ListViewItem>.from([]);
 
   @override
   void initState() {
@@ -29,6 +32,7 @@ class _ListViewPageState extends State<ListViewPage> {
         body: new ListView.separated(
           itemCount: myList.length,
           itemBuilder: (context, index) {
+            // print(myList[index]);
             return ItemView(myList[index]);
           },
           separatorBuilder: (BuildContext context, int index) {

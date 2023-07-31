@@ -7,13 +7,13 @@ class ExpansionPanelListPage extends StatefulWidget {
 
 class _ExpansionPanelListPageState extends State<ExpansionPanelListPage> {
   int selectedIndex = -1;
-  List<int> dataList;
+  late List<int> dataList;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    dataList = new List();
+    // dataList = new List();
 
     for (int i = 0; i < 20; i++) {
       dataList.add(i);
